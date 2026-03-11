@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhurtham Stories — Rental Jewellery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-muhurtham">
+
+    <!-- Decorative Mandala Corners -->
+    <div class="mandala-corner mandala-top-right"></div>
+    <div class="mandala-corner mandala-bottom-left"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Nool Citadel <span class="logo-amp">&</span> Muhurtham Stories</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="noolcitadel.html" class="nav-link">Nool Citadel</a></li>
+                <li><a href="muhurtham.html" class="nav-link active">Muhurtham Stories</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-hero muhurtham-hero">
+        <div class="container">
+            <div class="section-ornament">✦</div>
+            <h1 class="page-hero-title">Muhurtham Stories</h1>
+            <p class="page-hero-subtitle">Premium Jewellery Collection — For Your Most Special Occasions</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span class="current">Muhurtham Stories</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works section-reveal">
+        <div class="container">
+            <div class="section-ornament">✦</div>
+            <h2 class="section-title">Our Collection</h2>
+            <div class="steps-grid">
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <h4>Browse & Explore</h4>
+                    <p>Explore our curated collection of exquisite jewellery pieces</p>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">2</div>
+                    <div class="step-icon"><i class="fas fa-heart"></i></div>
+                    <h4>Find Your Favourite</h4>
+                    <p>Discover pieces that match your style and occasion</p>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">3</div>
+                    <div class="step-icon"><i class="fas fa-phone"></i></div>
+                    <h4>Get in Touch</h4>
+                    <p>Contact us to learn more about any piece you love</p>
+                </div>
+                <div class="step-card animate-on-scroll">
+                    <div class="step-number">4</div>
+                    <div class="step-icon"><i class="fas fa-gem"></i></div>
+                    <h4>Be Stunning</h4>
+                    <p>Wear our jewellery and make every moment unforgettable</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Occasion Filter -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Jewellery</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="temple">Temple</button>
+                <button class="filter-btn" data-filter="reception">Reception</button>
+                <button class="filter-btn" data-filter="necklace">Necklaces</button>
+                <button class="filter-btn" data-filter="earrings">Earrings & Sets</button>
+            </div>
+            <div class="filter-info">
+                <span id="rentalCount">15 Sets</span>
+                <div class="occasion-filter-dropdown">
+                    <select id="occasionSelect">
+                        <option value="all">Filter by Occasion</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="engagement">Engagement</option>
+                        <option value="reception">Reception</option>
+                        <option value="festival">Festival</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jewellery Grid -->
+    <section class="products-section">
+        <div class="container">
+
+            <!-- Category: Bridal Jewellery -->
+            <div class="category-header animate-on-scroll" id="bridal-section">
+                <h2 class="category-title"><i class="fas fa-crown"></i> Bridal Jewellery</h2>
+                <p>Complete bridal sets to make your special day magical</p>
+            </div>
+            <div class="products-grid">
+                <div class="jewellery-card animate-on-scroll" data-category="bridal" data-occasion="wedding" data-price="2500">
+                    <div class="product-image">
+                        <img src="images/muhurtham/grand-bridal-necklace-set.jpg" alt="Grand Bridal Necklace Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Grand Bridal Necklace Set</h4>
+                        <p class="product-desc">Complete bridal set: necklace, long haram, earrings, maang tikka & bangles</p>
+                        <div class="product-price">
+                            <span class="price">₹2,500</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll" data-category="bridal" data-occasion="wedding" data-price="3000">
+                    <div class="product-image">
+                        <img src="images/muhurtham/royal-kemp-bridal-set.jpg" alt="Royal Kemp Bridal Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Royal Kemp Bridal Set</h4>
+                        <p class="product-desc">Premium Kemp stone bridal set with choker, haram & jhumkas</p>
+                        <div class="product-price">
+                            <span class="price">₹3,000</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll" data-category="bridal" data-occasion="wedding" data-price="3500">
+                    <div class="product-image">
+                        <img src="images/muhurtham/diamond-look-bridal-set.jpg" alt="Diamond-Look Bridal Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Diamond-Look Bridal Set</h4>
+                        <p class="product-desc">Stunning diamond-look CZ bridal set with complete accessories</p>
+                        <div class="product-price">
+                            <span class="price">₹3,500</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Temple Jewellery -->
+            <div class="category-header animate-on-scroll" id="temple-section">
+                <h2 class="category-title"><i class="fas fa-mosque"></i> Temple Jewellery</h2>
+                <p>Traditional Kemp & Nagas work temple jewellery</p>
+            </div>
+            <div class="products-grid">
+                <div class="jewellery-card animate-on-scroll" data-category="temple" data-occasion="wedding,festival" data-price="1800">
+                    <div class="product-image">
+                        <img src="images/muhurtham/hacksound7.jpeg" alt="Lakshmi Temple Necklace" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        
+                    </div>
+                    <div class="product-info">
+                        <h4>Lakshmi Temple Necklace</h4>
+                        <p class="product-desc">Traditional Lakshmi coin necklace with matching earrings</p>
+                        <div class="product-price">
+                            <span class="price">₹1,800</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll" data-category="temple" data-occasion="wedding,festival" data-price="2200">
+                    <div class="product-image">
+                        <img src="images/muhurtham/nagas-work-temple-set.jpg" alt="Nagas Work Temple Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Nagas Work Temple Set</h4>
+                        <p class="product-desc">Exquisite Nagas work temple jewellery set with choker & long chain</p>
+                        <div class="product-price">
+                            <span class="price">₹2,200</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll" data-category="temple" data-occasion="festival" data-price="1500">
+                    <div class="product-image">
+                        <img src="images/muhurtham/kemp-stone-temple-set.jpg" alt="Kemp Stone Temple Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Kemp Stone Temple Set</h4>
+                        <p class="product-desc">Beautiful Kemp stone temple set ideal for festivals</p>
+                        <div class="product-price">
+                            <span class="price">₹1,500</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Reception Jewellery -->
+            <div class="category-header animate-on-scroll" id="reception-section">
+                <h2 class="category-title"><i class="fas fa-star"></i> Reception Jewellery</h2>
+                <p>Elegant & modern pieces for reception ceremonies</p>
+            </div>
+            <div class="products-grid">
+                <div class="jewellery-card animate-on-scroll" data-category="reception" data-occasion="reception" data-price="2000">
+                    <div class="product-image">
+                        <img src="images/muhurtham/cz-diamond-reception-set.jpg" alt="CZ Diamond Reception Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>CZ Diamond Reception Set</h4>
+                        <p class="product-desc">Sparkling CZ diamond necklace set with earrings & bracelet</p>
+                        <div class="product-price">
+                            <span class="price">₹2,000</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll" data-category="reception" data-occasion="reception,engagement" data-price="1800">
+                    <div class="product-image">
+                        <img src="images/muhurtham/rose-gold-elegant-set.jpg" alt="Rose Gold Elegant Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Rose Gold Elegant Set</h4>
+                        <p class="product-desc">Modern rose gold finish necklace with matching earrings</p>
+                        <div class="product-price">
+                            <span class="price">₹1,800</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll" data-category="reception" data-occasion="reception" data-price="2200">
+                    <div class="product-image">
+                        <img src="images/muhurtham/pearl-gold-statement-set.jpg" alt="Pearl & Gold Statement Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Pearl & Gold Statement Set</h4>
+                        <p class="product-desc">Luxurious pearl and gold statement necklace with chandelier earrings</p>
+                        <div class="product-price">
+                            <span class="price">₹2,200</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Traditional Necklaces -->
+            <div class="category-header animate-on-scroll" id="necklace-section">
+                <h2 class="category-title"><i class="fas fa-gem"></i> Traditional Necklaces</h2>
+                <p>Classic South Indian necklaces in elegant designs</p>
+            </div>
+            <div class="products-grid">
+                <div class="jewellery-card animate-on-scroll" data-category="necklace" data-occasion="wedding,engagement,festival" data-price="1500">
+                    <div class="product-image">
+                        <img src="images/muhurtham/mango-mala-necklace.jpg" alt="Mango Mala Necklace" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Mango Mala Necklace</h4>
+                        <p class="product-desc">Traditional mango-shaped gold necklace with matching studs</p>
+                        <div class="product-price">
+                            <span class="price">₹1,500</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll" data-category="necklace" data-occasion="wedding,engagement" data-price="1700">
+                    <div class="product-image">
+                        <img src="images/muhurtham/antique-gold-choker.jpg" alt="Antique Gold Choker" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Antique Gold Choker</h4>
+                        <p class="product-desc">Stunning antique gold finish choker with traditional design</p>
+                        <div class="product-price">
+                            <span class="price">₹1,700</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll" data-category="necklace" data-occasion="wedding,festival" data-price="1900">
+                    <div class="product-image">
+                        <img src="images/muhurtham/ruby-emerald-haram.jpg" alt="Ruby & Emerald Haram" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Ruby & Emerald Haram</h4>
+                        <p class="product-desc">Long haram with ruby and emerald stones in gold setting</p>
+                        <div class="product-price">
+                            <span class="price">₹1,900</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Earrings & Sets -->
+            <div class="category-header animate-on-scroll" id="earrings-section">
+                <h2 class="category-title"><i class="fas fa-gem"></i> Earrings & Sets</h2>
+                <p>Jhumkas, chandbalis & earring sets for every style</p>
+            </div>
+            <div class="products-grid">
+                <div class="jewellery-card animate-on-scroll" data-category="earrings" data-occasion="wedding,reception,engagement,festival" data-price="800">
+                    <div class="product-image">
+                        <img src="images/muhurtham/grand-kemp-jhumkas.jpg" alt="Grand Kemp Jhumkas" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Grand Kemp Jhumkas</h4>
+                        <p class="product-desc">Large statement Kemp jhumkas with pearl drops — like the Monika collection</p>
+                        <div class="product-price">
+                            <span class="price">₹800</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll" data-category="earrings" data-occasion="reception,engagement" data-price="600">
+                    <div class="product-image">
+                        <img src="images/muhurtham/cz-chandbali-earrings.jpg" alt="CZ Chandbali Earrings" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>CZ Chandbali Earrings</h4>
+                        <p class="product-desc">Elegant CZ chandbali earrings with detachable chain</p>
+                        <div class="product-price">
+                            <span class="price">₹600</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll" data-category="earrings" data-occasion="wedding,festival" data-price="700">
+                    <div class="product-image">
+                        <img src="images/muhurtham/temple-ear-cuff-set.jpg" alt="Temple Ear Cuff Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Temple Ear Cuff Set</h4>
+                        <p class="product-desc">Traditional temple design ear cuffs with matching studs</p>
+                        <div class="product-price">
+                            <span class="price">₹700</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">✦ Nool Citadel & Muhurtham Stories</h3>
+                    <p>Handcrafted accessories & premium rental jewellery for your most cherished moments.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="noolcitadel.html">Nool Citadel</a></li>
+                        <li><a href="muhurtham.html">Muhurtham Stories</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nool Citadel & Muhurtham Stories. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

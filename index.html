@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nool Citadel & Muhurtham Stories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Decorative Mandala Corners -->
+    <div class="mandala-corner mandala-top-right"></div>
+    <div class="mandala-corner mandala-bottom-left"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Nool Citadel <span class="logo-amp">&</span> Muhurtham Stories</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="noolcitadel.html" class="nav-link">Nool Citadel</a></li>
+                <li><a href="muhurtham.html" class="nav-link">Muhurtham Stories</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Kolam SVG Pattern Background Overlay -->
+        <div class="hero-kolam-bg" aria-hidden="true">
+            <svg class="kolam-pattern-svg" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <pattern id="kolamGrid" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+                        <!-- Central lotus kolam motif -->
+                        <circle cx="100" cy="100" r="3" fill="currentColor" opacity="0.35"/>
+                        <circle cx="0" cy="0" r="2.5" fill="currentColor" opacity="0.25"/>
+                        <circle cx="200" cy="0" r="2.5" fill="currentColor" opacity="0.25"/>
+                        <circle cx="0" cy="200" r="2.5" fill="currentColor" opacity="0.25"/>
+                        <circle cx="200" cy="200" r="2.5" fill="currentColor" opacity="0.25"/>
+                        <circle cx="100" cy="0" r="2" fill="currentColor" opacity="0.2"/>
+                        <circle cx="100" cy="200" r="2" fill="currentColor" opacity="0.2"/>
+                        <circle cx="0" cy="100" r="2" fill="currentColor" opacity="0.2"/>
+                        <circle cx="200" cy="100" r="2" fill="currentColor" opacity="0.2"/>
+                        <!-- Kolam curves around center -->
+                        <path d="M100,70 Q115,85 100,100 Q85,85 100,70Z" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.4"/>
+                        <path d="M100,130 Q85,115 100,100 Q115,115 100,130Z" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.4"/>
+                        <path d="M70,100 Q85,85 100,100 Q85,115 70,100Z" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.4"/>
+                        <path d="M130,100 Q115,115 100,100 Q115,85 130,100Z" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.4"/>
+                        <!-- Diagonal kolam loops -->
+                        <path d="M100,70 Q130,70 130,100" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+                        <path d="M130,100 Q130,130 100,130" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+                        <path d="M100,130 Q70,130 70,100" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+                        <path d="M70,100 Q70,70 100,70" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+                        <!-- Outer circular arcs -->
+                        <path d="M50,50 Q100,30 150,50" fill="none" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+                        <path d="M150,50 Q170,100 150,150" fill="none" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+                        <path d="M150,150 Q100,170 50,150" fill="none" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+                        <path d="M50,150 Q30,100 50,50" fill="none" stroke="currentColor" stroke-width="0.4" opacity="0.2"/>
+                        <!-- Corner mini kolam dots -->
+                        <circle cx="50" cy="50" r="1.5" fill="currentColor" opacity="0.15"/>
+                        <circle cx="150" cy="50" r="1.5" fill="currentColor" opacity="0.15"/>
+                        <circle cx="50" cy="150" r="1.5" fill="currentColor" opacity="0.15"/>
+                        <circle cx="150" cy="150" r="1.5" fill="currentColor" opacity="0.15"/>
+                        <!-- Connecting kolam curves between grid points -->
+                        <path d="M0,0 Q50,25 100,0" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.15"/>
+                        <path d="M100,0 Q150,25 200,0" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.15"/>
+                        <path d="M0,200 Q50,175 100,200" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.15"/>
+                        <path d="M100,200 Q150,175 200,200" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.15"/>
+                        <path d="M0,0 Q25,50 0,100" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.15"/>
+                        <path d="M0,100 Q25,150 0,200" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.15"/>
+                        <path d="M200,0 Q175,50 200,100" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.15"/>
+                        <path d="M200,100 Q175,150 200,200" fill="none" stroke="currentColor" stroke-width="0.35" opacity="0.15"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#kolamGrid)"/>
+            </svg>
+        </div>
+
+        <!-- Decorative Corner Kolam Ornaments -->
+        <svg class="hero-corner-kolam corner-tl" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="rgba(184,144,68,0.18)" stroke-width="1">
+                <circle cx="10" cy="10" r="4" fill="rgba(184,144,68,0.08)"/>
+                <circle cx="40" cy="10" r="3"/>
+                <circle cx="10" cy="40" r="3"/>
+                <circle cx="40" cy="40" r="4" fill="rgba(184,144,68,0.06)"/>
+                <circle cx="70" cy="10" r="2.5"/>
+                <circle cx="10" cy="70" r="2.5"/>
+                <circle cx="70" cy="40" r="2"/>
+                <circle cx="40" cy="70" r="2"/>
+                <path d="M10,10 Q25,5 40,10 Q55,5 70,10" stroke-width="0.7"/>
+                <path d="M10,10 Q5,25 10,40 Q5,55 10,70" stroke-width="0.7"/>
+                <path d="M10,10 Q25,25 40,40" stroke-width="0.6"/>
+                <path d="M40,10 Q40,25 40,40 Q40,55 40,70" stroke-width="0.5"/>
+                <path d="M10,40 Q25,40 40,40 Q55,40 70,40" stroke-width="0.5"/>
+                <circle cx="25" cy="25" r="8" stroke-width="0.5" opacity="0.6"/>
+                <path d="M10,10 C30,15 15,30 10,10" stroke-width="0.6" opacity="0.5"/>
+                <circle cx="100" cy="10" r="1.5" opacity="0.4"/>
+                <circle cx="10" cy="100" r="1.5" opacity="0.4"/>
+                <path d="M70,10 Q85,5 100,10" stroke-width="0.4" opacity="0.3"/>
+                <path d="M10,70 Q5,85 10,100" stroke-width="0.4" opacity="0.3"/>
+            </g>
+        </svg>
+        <svg class="hero-corner-kolam corner-tr" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="rgba(184,144,68,0.18)" stroke-width="1">
+                <circle cx="150" cy="10" r="4" fill="rgba(184,144,68,0.08)"/>
+                <circle cx="120" cy="10" r="3"/>
+                <circle cx="150" cy="40" r="3"/>
+                <circle cx="120" cy="40" r="4" fill="rgba(184,144,68,0.06)"/>
+                <circle cx="90" cy="10" r="2.5"/>
+                <circle cx="150" cy="70" r="2.5"/>
+                <path d="M150,10 Q135,5 120,10 Q105,5 90,10" stroke-width="0.7"/>
+                <path d="M150,10 Q155,25 150,40 Q155,55 150,70" stroke-width="0.7"/>
+                <path d="M150,10 Q135,25 120,40" stroke-width="0.6"/>
+                <circle cx="135" cy="25" r="8" stroke-width="0.5" opacity="0.6"/>
+                <path d="M120,10 Q120,25 120,40 Q120,55 120,70" stroke-width="0.5"/>
+                <path d="M150,40 Q135,40 120,40 Q105,40 90,40" stroke-width="0.5"/>
+                <circle cx="60" cy="10" r="1.5" opacity="0.4"/>
+                <circle cx="150" cy="100" r="1.5" opacity="0.4"/>
+            </g>
+        </svg>
+        <svg class="hero-corner-kolam corner-bl" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="rgba(184,144,68,0.18)" stroke-width="1">
+                <circle cx="10" cy="150" r="4" fill="rgba(184,144,68,0.08)"/>
+                <circle cx="40" cy="150" r="3"/>
+                <circle cx="10" cy="120" r="3"/>
+                <circle cx="40" cy="120" r="4" fill="rgba(184,144,68,0.06)"/>
+                <circle cx="70" cy="150" r="2.5"/>
+                <circle cx="10" cy="90" r="2.5"/>
+                <path d="M10,150 Q25,155 40,150 Q55,155 70,150" stroke-width="0.7"/>
+                <path d="M10,150 Q5,135 10,120 Q5,105 10,90" stroke-width="0.7"/>
+                <path d="M10,150 Q25,135 40,120" stroke-width="0.6"/>
+                <circle cx="25" cy="135" r="8" stroke-width="0.5" opacity="0.6"/>
+                <circle cx="100" cy="150" r="1.5" opacity="0.4"/>
+                <circle cx="10" cy="60" r="1.5" opacity="0.4"/>
+            </g>
+        </svg>
+        <svg class="hero-corner-kolam corner-br" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g fill="none" stroke="rgba(184,144,68,0.18)" stroke-width="1">
+                <circle cx="150" cy="150" r="4" fill="rgba(184,144,68,0.08)"/>
+                <circle cx="120" cy="150" r="3"/>
+                <circle cx="150" cy="120" r="3"/>
+                <circle cx="120" cy="120" r="4" fill="rgba(184,144,68,0.06)"/>
+                <circle cx="90" cy="150" r="2.5"/>
+                <circle cx="150" cy="90" r="2.5"/>
+                <path d="M150,150 Q135,155 120,150 Q105,155 90,150" stroke-width="0.7"/>
+                <path d="M150,150 Q155,135 150,120 Q155,105 150,90" stroke-width="0.7"/>
+                <path d="M150,150 Q135,135 120,120" stroke-width="0.6"/>
+                <circle cx="135" cy="135" r="8" stroke-width="0.5" opacity="0.6"/>
+                <circle cx="60" cy="150" r="1.5" opacity="0.4"/>
+                <circle cx="150" cy="60" r="1.5" opacity="0.4"/>
+            </g>
+        </svg>
+
+        <!-- Soft Glowing Orbs -->
+        <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-3" aria-hidden="true"></div>
+
+        <!-- Floating Jewellery Motifs -->
+        <div class="hero-floating-motifs" aria-hidden="true">
+            <svg class="float-motif float-bangle-1" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="35" cy="35" r="28" fill="none" stroke="rgba(184,144,68,0.14)" stroke-width="2.5"/>
+                <circle cx="35" cy="35" r="23" fill="none" stroke="rgba(184,144,68,0.09)" stroke-width="1.5"/>
+                <circle cx="35" cy="35" r="32" fill="none" stroke="rgba(184,144,68,0.06)" stroke-width="0.8"/>
+                <circle cx="35" cy="7" r="2" fill="rgba(184,144,68,0.12)"/>
+                <circle cx="35" cy="63" r="2" fill="rgba(184,144,68,0.12)"/>
+                <circle cx="7" cy="35" r="2" fill="rgba(184,144,68,0.12)"/>
+                <circle cx="63" cy="35" r="2" fill="rgba(184,144,68,0.12)"/>
+            </svg>
+            <svg class="float-motif float-pearl-1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="8" fill="rgba(184,144,68,0.08)" stroke="rgba(184,144,68,0.14)" stroke-width="1"/>
+                <ellipse cx="9" cy="9" rx="3" ry="2" fill="rgba(255,255,255,0.15)" transform="rotate(-20 9 9)"/>
+            </svg>
+            <svg class="float-motif float-bangle-2" viewBox="0 0 55 55" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="27.5" cy="27.5" r="20" fill="none" stroke="rgba(184,144,68,0.12)" stroke-width="2"/>
+                <circle cx="27.5" cy="27.5" r="16" fill="none" stroke="rgba(184,144,68,0.07)" stroke-width="1.2"/>
+                <circle cx="27.5" cy="7.5" r="1.5" fill="rgba(184,144,68,0.1)"/>
+                <circle cx="27.5" cy="47.5" r="1.5" fill="rgba(184,144,68,0.1)"/>
+            </svg>
+            <svg class="float-motif float-pearl-2" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="9" cy="9" r="6" fill="rgba(184,144,68,0.06)" stroke="rgba(184,144,68,0.1)" stroke-width="0.8"/>
+                <ellipse cx="7" cy="7" rx="2" ry="1.5" fill="rgba(255,255,255,0.1)"/>
+            </svg>
+            <svg class="float-motif float-thread-1" viewBox="0 0 80 30" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5,15 Q20,5 40,15 Q60,25 75,15" fill="none" stroke="rgba(184,144,68,0.1)" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M5,18 Q20,8 40,18 Q60,28 75,18" fill="none" stroke="rgba(184,144,68,0.07)" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+            <svg class="float-motif float-pearl-3" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="7" cy="7" r="5" fill="rgba(184,144,68,0.05)" stroke="rgba(184,144,68,0.09)" stroke-width="0.7"/>
+            </svg>
+            <svg class="float-motif float-bangle-3" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22.5" cy="22.5" r="16" fill="none" stroke="rgba(184,144,68,0.1)" stroke-width="1.8"/>
+                <circle cx="22.5" cy="22.5" r="12" fill="none" stroke="rgba(184,144,68,0.06)" stroke-width="1"/>
+            </svg>
+        </div>
+
+        <!-- Hero Carousel -->
+        <div class="hero-carousel">
+            <div class="hero-slide active" id="slide1">
+                <div class="hero-content">
+                    <div class="hero-divider-top">
+                        <span class="h-divider-line"></span>
+                        <span class="h-divider-ornament">✦</span>
+                        <span class="h-divider-line"></span>
+                    </div>
+                    <p class="hero-subtitle animate-fade-up">Handcrafted with Love</p>
+                    <h1 class="hero-title animate-fade-up delay-1">Adorn Your <br><em>Beautiful Story</em></h1>
+                    <div class="hero-divider-bottom">
+                        <span class="h-divider-line-sm"></span>
+                        <span class="h-divider-dot"></span>
+                        <span class="h-divider-dot"></span>
+                        <span class="h-divider-dot"></span>
+                        <span class="h-divider-line-sm"></span>
+                    </div>
+                    <p class="hero-desc animate-fade-up delay-2">Discover exquisite handmade accessories & premium rental jewellery for your most cherished moments</p>
+                    <div class="hero-buttons animate-fade-up delay-3">
+                        <a href="noolcitadel.html" class="btn btn-hero-primary">
+                            <span>Explore Collection</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="muhurtham.html" class="btn btn-hero-secondary">
+                            <span>View Muhurtham Jewellery</span>
+                            <i class="fas fa-gem"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" id="slide2">
+                <div class="hero-content">
+                    <div class="hero-divider-top">
+                        <span class="h-divider-line"></span>
+                        <span class="h-divider-ornament">✦</span>
+                        <span class="h-divider-line"></span>
+                    </div>
+                    <p class="hero-subtitle">Nool Citadel</p>
+                    <h1 class="hero-title">Silk Thread <br><em>Masterpieces</em></h1>
+                    <div class="hero-divider-bottom">
+                        <span class="h-divider-line-sm"></span>
+                        <span class="h-divider-dot"></span>
+                        <span class="h-divider-dot"></span>
+                        <span class="h-divider-dot"></span>
+                        <span class="h-divider-line-sm"></span>
+                    </div>
+                    <p class="hero-desc">Handcrafted bangles, bracelets, phone hangings & adorable kids accessories</p>
+                    <div class="hero-buttons">
+                        <a href="noolcitadel.html" class="btn btn-hero-primary">
+                            <span>Explore Collection</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="muhurtham.html" class="btn btn-hero-secondary">
+                            <span>View Muhurtham Jewellery</span>
+                            <i class="fas fa-gem"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide" id="slide3">
+                <div class="hero-content">
+                    <div class="hero-divider-top">
+                        <span class="h-divider-line"></span>
+                        <span class="h-divider-ornament">✦</span>
+                        <span class="h-divider-line"></span>
+                    </div>
+                    <p class="hero-subtitle">Muhurtham Stories</p>
+                    <h1 class="hero-title">Jewellery for <br><em>Every Occasion</em></h1>
+                    <div class="hero-divider-bottom">
+                        <span class="h-divider-line-sm"></span>
+                        <span class="h-divider-dot"></span>
+                        <span class="h-divider-dot"></span>
+                        <span class="h-divider-dot"></span>
+                        <span class="h-divider-line-sm"></span>
+                    </div>
+                    <p class="hero-desc">Bridal, temple & reception jewellery available for rent — make your special day unforgettable</p>
+                    <div class="hero-buttons">
+                        <a href="muhurtham.html" class="btn btn-hero-primary">
+                            <span>Browse Jewellery</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="noolcitadel.html" class="btn btn-hero-secondary">
+                            <span>Explore Accessories</span>
+                            <i class="fas fa-gem"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Indicators -->
+        <div class="hero-indicators">
+            <button class="indicator active" data-slide="0"></button>
+            <button class="indicator" data-slide="1"></button>
+            <button class="indicator" data-slide="2"></button>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero-scroll-hint">
+            <div class="scroll-dots-row">
+                <span class="scroll-dot-anim"></span>
+                <span class="scroll-dot-anim"></span>
+                <span class="scroll-dot-anim"></span>
+            </div>
+            <span class="scroll-text">Scroll to Explore</span>
+            <div class="scroll-arrow-wrap">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Introduction -->
+    <section class="brand-intro section-reveal" id="brand">
+        <!-- Section Background Decorations -->
+        <div class="brand-intro-bg-pattern" aria-hidden="true">
+            <svg class="brand-kolam-overlay" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <pattern id="brandKolam" x="0" y="0" width="150" height="150" patternUnits="userSpaceOnUse">
+                        <circle cx="75" cy="75" r="2.5" fill="currentColor" opacity="0.3"/>
+                        <circle cx="0" cy="0" r="2" fill="currentColor" opacity="0.2"/>
+                        <circle cx="150" cy="0" r="2" fill="currentColor" opacity="0.2"/>
+                        <circle cx="0" cy="150" r="2" fill="currentColor" opacity="0.2"/>
+                        <circle cx="150" cy="150" r="2" fill="currentColor" opacity="0.2"/>
+                        <circle cx="75" cy="0" r="1.5" fill="currentColor" opacity="0.15"/>
+                        <circle cx="0" cy="75" r="1.5" fill="currentColor" opacity="0.15"/>
+                        <circle cx="150" cy="75" r="1.5" fill="currentColor" opacity="0.15"/>
+                        <circle cx="75" cy="150" r="1.5" fill="currentColor" opacity="0.15"/>
+                        <path d="M75,55 Q85,65 75,75 Q65,65 75,55Z" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                        <path d="M75,95 Q65,85 75,75 Q85,85 75,95Z" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                        <path d="M55,75 Q65,65 75,75 Q65,85 55,75Z" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                        <path d="M95,75 Q85,85 75,75 Q85,65 95,75Z" fill="none" stroke="currentColor" stroke-width="0.5" opacity="0.25"/>
+                        <path d="M75,55 Q95,55 95,75" fill="none" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+                        <path d="M95,75 Q95,95 75,95" fill="none" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+                        <path d="M75,95 Q55,95 55,75" fill="none" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+                        <path d="M55,75 Q55,55 75,55" fill="none" stroke="currentColor" stroke-width="0.4" opacity="0.18"/>
+                        <path d="M0,0 Q37,15 75,0" fill="none" stroke="currentColor" stroke-width="0.3" opacity="0.12"/>
+                        <path d="M75,0 Q112,15 150,0" fill="none" stroke="currentColor" stroke-width="0.3" opacity="0.12"/>
+                        <path d="M0,0 Q15,37 0,75" fill="none" stroke="currentColor" stroke-width="0.3" opacity="0.12"/>
+                        <path d="M0,75 Q15,112 0,150" fill="none" stroke="currentColor" stroke-width="0.3" opacity="0.12"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#brandKolam)"/>
+            </svg>
+        </div>
+
+        <!-- Corner Decorative Dots -->
+        <div class="brand-corner-decor brand-corner-tl" aria-hidden="true">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke="rgba(184,144,68,0.15)" stroke-width="0.8">
+                    <circle cx="8" cy="8" r="3" fill="rgba(184,144,68,0.06)"/>
+                    <circle cx="25" cy="8" r="2"/>
+                    <circle cx="8" cy="25" r="2"/>
+                    <path d="M8,8 Q16,4 25,8" stroke-width="0.5"/>
+                    <path d="M8,8 Q4,16 8,25" stroke-width="0.5"/>
+                    <circle cx="42" cy="8" r="1.2" opacity="0.5"/>
+                    <circle cx="8" cy="42" r="1.2" opacity="0.5"/>
+                </g>
+            </svg>
+        </div>
+        <div class="brand-corner-decor brand-corner-tr" aria-hidden="true">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke="rgba(184,144,68,0.15)" stroke-width="0.8">
+                    <circle cx="72" cy="8" r="3" fill="rgba(184,144,68,0.06)"/>
+                    <circle cx="55" cy="8" r="2"/>
+                    <circle cx="72" cy="25" r="2"/>
+                    <path d="M72,8 Q64,4 55,8" stroke-width="0.5"/>
+                    <path d="M72,8 Q76,16 72,25" stroke-width="0.5"/>
+                    <circle cx="38" cy="8" r="1.2" opacity="0.5"/>
+                    <circle cx="72" cy="42" r="1.2" opacity="0.5"/>
+                </g>
+            </svg>
+        </div>
+        <div class="brand-corner-decor brand-corner-bl" aria-hidden="true">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke="rgba(184,144,68,0.15)" stroke-width="0.8">
+                    <circle cx="8" cy="72" r="3" fill="rgba(184,144,68,0.06)"/>
+                    <circle cx="25" cy="72" r="2"/>
+                    <circle cx="8" cy="55" r="2"/>
+                    <path d="M8,72 Q16,76 25,72" stroke-width="0.5"/>
+                    <path d="M8,72 Q4,64 8,55" stroke-width="0.5"/>
+                </g>
+            </svg>
+        </div>
+        <div class="brand-corner-decor brand-corner-br" aria-hidden="true">
+            <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" stroke="rgba(184,144,68,0.15)" stroke-width="0.8">
+                    <circle cx="72" cy="72" r="3" fill="rgba(184,144,68,0.06)"/>
+                    <circle cx="55" cy="72" r="2"/>
+                    <circle cx="72" cy="55" r="2"/>
+                    <path d="M72,72 Q64,76 55,72" stroke-width="0.5"/>
+                    <path d="M72,72 Q76,64 72,55" stroke-width="0.5"/>
+                </g>
+            </svg>
+        </div>
+
+        <div class="container">
+            <div class="section-ornament">✦</div>
+            <h2 class="section-title">Our Story</h2>
+            <!-- Gold Ornamental Divider -->
+            <div class="brand-title-divider">
+                <span class="btd-line"></span>
+                <span class="btd-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                        <path d="M12,2 Q14,6 18,6 Q14,6 14,10 Q14,6 18,6 Q14,6 12,2Z" fill="rgba(184,144,68,0.6)" stroke="rgba(184,144,68,0.4)" stroke-width="0.5"/>
+                        <path d="M12,22 Q10,18 6,18 Q10,18 10,14 Q10,18 6,18 Q10,18 12,22Z" fill="rgba(184,144,68,0.6)" stroke="rgba(184,144,68,0.4)" stroke-width="0.5"/>
+                        <path d="M2,12 Q6,10 6,6 Q6,10 10,10 Q6,10 6,6 Q6,10 2,12Z" fill="rgba(184,144,68,0.6)" stroke="rgba(184,144,68,0.4)" stroke-width="0.5"/>
+                        <path d="M22,12 Q18,14 18,18 Q18,14 14,14 Q18,14 18,18 Q18,14 22,12Z" fill="rgba(184,144,68,0.6)" stroke="rgba(184,144,68,0.4)" stroke-width="0.5"/>
+                        <circle cx="12" cy="12" r="2" fill="rgba(184,144,68,0.5)"/>
+                    </svg>
+                </span>
+                <span class="btd-line"></span>
+            </div>
+            <p class="section-subtitle">Where tradition meets elegance</p>
+
+            <!-- Kruthika-style Showcase Grid -->
+            <div class="showcase-grid">
+                <div class="showcase-photo showcase-r1-c1">
+                    <img src="images/showcase/showcase1.jpg" alt="Jewellery Showcase" class="showcase-placeholder">
+                </div>
+                <div class="showcase-photo showcase-r1-c2">
+                    <img src="images/showcase/showcase2.jpg" alt="Crown Collection" class="showcase-placeholder">
+                </div>
+                <div class="showcase-photo showcase-r2-c1">
+                    <img src="images/showcase/showcase3.jpg" alt="Star Collection" class="showcase-placeholder showcase-placeholder-tall">
+                </div>
+                <div class="showcase-text showcase-r2-c2">
+                    <div class="monika-card">
+                        <img src="images/monika-card.png" alt="Monika - Exquisite handcrafted jewellery" class="monika-card-img">
+                    </div>
+                </div>
+                <div class="showcase-photo showcase-r3-c1">
+                    <img src="images/showcase/showcase4.jpg" alt="Ring Collection" class="showcase-placeholder">
+                </div>
+                <div class="showcase-photo showcase-r3-c2">
+                    <img src="images/showcase/showcase5.jpg" alt="Heart Collection" class="showcase-placeholder">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured: Nool Citadel Preview -->
+    <section class="featured-section section-reveal" id="nool-preview">
+        <div class="container">
+            <div class="section-ornament">✦</div>
+            <h2 class="section-title">Nool Citadel</h2>
+            <p class="section-subtitle">Handmade Accessories — Crafted with Love</p>
+            <div class="featured-grid">
+                <div class="product-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/silk-thread-bangles.jpg" alt="Silk Thread Bangles" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Silk Thread Bangles</h4>
+                        <p class="product-desc">Elegant handcrafted silk thread bangles in vibrant colors</p>
+                        <div class="product-price">
+                            <span class="price">₹350</span>
+                            <span class="price-old">₹500</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/phone-hangings.jpg" alt="Phone Hangings" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Phone Hangings</h4>
+                        <p class="product-desc">Decorative handmade phone charms and hangings</p>
+                        <div class="product-price">
+                            <span class="price">₹199</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/bracelets.jpg" alt="Bracelets" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Bracelets</h4>
+                        <p class="product-desc">Stylish silk thread bracelets for every occasion</p>
+                        <div class="product-price">
+                            <span class="price">₹250</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/kids-hair-bands-clips.jpg" alt="Kids Hair Bands & Clips" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Kids Hair Bands & Clips</h4>
+                        <p class="product-desc">Adorable accessories for your little ones</p>
+                        <div class="product-price">
+                            <span class="price">₹149</span>
+                            <span class="price-old">₹200</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="noolcitadel.html" class="btn btn-primary btn-lg">View All Accessories <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured: Muhurtham Stories Preview -->
+    <section class="featured-section muhurtham-preview section-reveal" id="muhurtham-preview">
+        <div class="container">
+            <div class="section-ornament">✦</div>
+            <h2 class="section-title">Muhurtham Stories</h2>
+            <p class="section-subtitle">Jewellery for Every Special Occasion</p>
+            <div class="featured-grid">
+                <div class="jewellery-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="images/muhurtham/bridal-jewellery-set.jpg" alt="Bridal Jewellery Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Bridal Jewellery Set</h4>
+                        <p class="product-desc">Complete bridal jewellery set with necklace, earrings & more</p>
+                        <div class="product-price">
+                            <span class="price">₹2,500</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="images/muhurtham/temple-jewellery.jpg" alt="Temple Jewellery Collection" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Temple Jewellery Collection</h4>
+                        <p class="product-desc">Traditional temple jewellery with intricate Kemp work</p>
+                        <div class="product-price">
+                            <span class="price">₹1,800</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="images/muhurtham/reception-jewellery-set.jpg" alt="Reception Jewellery Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Reception Jewellery Set</h4>
+                        <p class="product-desc">Elegant jewellery set perfect for reception ceremonies</p>
+                        <div class="product-price">
+                            <span class="price">₹2,000</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+                <div class="jewellery-card animate-on-scroll">
+                    <div class="product-image">
+                        <img src="images/muhurtham/traditional-necklace-set.jpg" alt="Traditional Necklace Set" class="product-placeholder jewellery-bg">
+                        <div class="product-overlay">
+                            <button class="btn-icon" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge rental">For Rent</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Traditional Necklace Set</h4>
+                        <p class="product-desc">Classic South Indian traditional necklace with matching earrings</p>
+                        <div class="product-price">
+                            <span class="price">₹1,500</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-gold">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="muhurtham.html" class="btn btn-gold btn-lg">Browse All Jewellery <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Occasions Section -->
+    <section class="occasions-section section-reveal" id="occasions">
+        <div class="container">
+            <div class="section-ornament">✦</div>
+            <h2 class="section-title">Browse by Occasion</h2>
+            <p class="section-subtitle">Find the perfect pieces for every celebration</p>
+            <div class="occasions-grid">
+                <a href="muhurtham.html#wedding" class="occasion-card animate-on-scroll">
+                    <div class="occasion-icon"><i class="fas fa-ring"></i></div>
+                    <h4>Wedding</h4>
+                    <p>Complete bridal sets</p>
+                </a>
+                <a href="muhurtham.html#engagement" class="occasion-card animate-on-scroll">
+                    <div class="occasion-icon"><i class="fas fa-heart"></i></div>
+                    <h4>Engagement</h4>
+                    <p>Elegant ceremony jewellery</p>
+                </a>
+                <a href="muhurtham.html#reception" class="occasion-card animate-on-scroll">
+                    <div class="occasion-icon"><i class="fas fa-star"></i></div>
+                    <h4>Reception</h4>
+                    <p>Stunning party sets</p>
+                </a>
+                <a href="muhurtham.html#festival" class="occasion-card animate-on-scroll">
+                    <div class="occasion-icon"><i class="fas fa-sun"></i></div>
+                    <h4>Festivals</h4>
+                    <p>Traditional festive pieces</p>
+                </a>
+                <a href="noolcitadel.html" class="occasion-card animate-on-scroll">
+                    <div class="occasion-icon"><i class="fas fa-gift"></i></div>
+                    <h4>Gifting</h4>
+                    <p>Perfect handmade gifts</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section-reveal" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image animate-on-scroll">
+                    <div class="about-placeholder">
+                        <i class="fas fa-spa"></i>
+                        <span>Our Workshop</span>
+                    </div>
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <div class="section-ornament left">✦</div>
+                    <h2 class="section-title left">About Us</h2>
+                    <p>Welcome to <strong>Nool Citadel & Muhurtham Stories</strong> — where every thread tells a tale and every jewel holds a memory.</p>
+                    <p>We are passionate artisans dedicated to creating beautiful handmade silk thread accessories and curating the finest rental jewellery for your most precious occasions.</p>
+                    <p>From vibrant bangles crafted with love to opulent bridal sets that make your special day unforgettable — we bring tradition and elegance together.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Products</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Rental Sets</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section section-reveal">
+        <div class="container">
+            <div class="section-ornament">✦</div>
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-carousel">
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"The silk thread bangles are absolutely gorgeous! The craftsmanship is incredible and the colors are so vibrant. Will definitely order again!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <strong>Priya S.</strong>
+                            <span>Nool Citadel Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Rented a bridal jewellery set for my wedding and it was stunning! Everyone complimented the pieces. The service was excellent and hassle-free."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <strong>Meera R.</strong>
+                            <span>Muhurtham Stories Customer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Got the cutest hair clips for my daughter! She loves them. Great quality and adorable designs. The kids collection is wonderful!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div>
+                            <strong>Divya K.</strong>
+                            <span>Nool Citadel Customer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-reveal" id="contact">
+        <div class="container">
+            <div class="section-ornament">✦</div>
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">We'd love to hear from you</p>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>Your City, Tamil Nadu, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 XXXXX XXXXX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>hello@noolcitadel.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll" onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="">Select Inquiry Type</option>
+                            <option value="accessories">Accessories (Nool Citadel)</option>
+                            <option value="rental">Jewellery Rental (Muhurtham Stories)</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">✦ Nool Citadel & Muhurtham Stories</h3>
+                    <p>Handcrafted accessories & premium rental jewellery for your most cherished moments. Every thread, every gem — crafted with love.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="noolcitadel.html">Nool Citadel</a></li>
+                        <li><a href="muhurtham.html">Muhurtham Stories</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                    <p class="footer-newsletter-text">Stay updated with our latest collections</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nool Citadel & Muhurtham Stories. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nool Citadel — Handmade Accessories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-nool">
+
+    <!-- Decorative Mandala Corners -->
+    <div class="mandala-corner mandala-top-right"></div>
+    <div class="mandala-corner mandala-bottom-left"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">Nool Citadel <span class="logo-amp">&</span> Muhurtham Stories</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="noolcitadel.html" class="nav-link active">Nool Citadel</a></li>
+                <li><a href="muhurtham.html" class="nav-link">Muhurtham Stories</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-hero nool-hero">
+        <div class="container">
+            <div class="section-ornament">✦</div>
+            <h1 class="page-hero-title">Nool Citadel</h1>
+            <p class="page-hero-subtitle">Handcrafted Silk Thread Accessories — Made with Love</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> <span>/</span> <span class="current">Nool Citadel</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="bangles">Silk Thread Bangles</button>
+                <button class="filter-btn" data-filter="phone-hangings">Phone Hangings</button>
+                <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+                <button class="filter-btn" data-filter="hair-bands">Kids Hair Bands</button>
+                <button class="filter-btn" data-filter="hair-clips">Kids Hair Clips</button>
+            </div>
+            <div class="filter-info">
+                <span id="productCount">20 Products</span>
+                <div class="sort-dropdown">
+                    <select id="sortSelect">
+                        <option value="default">Sort by: Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="newest">Newest First</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container">
+
+            <!-- Category: Silk Thread Bangles -->
+            <div class="category-header animate-on-scroll" id="bangles-section">
+                <h2 class="category-title"><i class="fas fa-ring"></i> Silk Thread Bangles</h2>
+                <p>Handcrafted with premium silk thread in vibrant colors</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card animate-on-scroll" data-category="bangles" data-price="350">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/classic-red-silk-bangles.jpg" alt="Classic Red Silk Bangles" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Classic Red Silk Bangles</h4>
+                        <p class="product-desc">Set of 6 beautiful red silk thread bangles with gold accents</p>
+                        <div class="product-price">
+                            <span class="price">₹350</span>
+                            <span class="price-old">₹500</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="bangles" data-price="399">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/pink-gold-silk-bangles.jpg" alt="Pink & Gold Silk Bangles" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Pink & Gold Silk Bangles</h4>
+                        <p class="product-desc">Set of 8 pink silk thread bangles with pearl details</p>
+                        <div class="product-price">
+                            <span class="price">₹399</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="bangles" data-price="450">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/teal-blue-silk-bangles.jpg" alt="Teal Blue Silk Bangles" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Teal Blue Silk Bangles</h4>
+                        <p class="product-desc">Set of 6 teal blue bangles with Kundan stone work</p>
+                        <div class="product-price">
+                            <span class="price">₹450</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="bangles" data-price="550">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/purple-royal-silk-bangles.jpg" alt="Purple Royal Silk Bangles" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Purple Royal Silk Bangles</h4>
+                        <p class="product-desc">Premium set of 10 purple bangles with mirror work detailing</p>
+                        <div class="product-price">
+                            <span class="price">₹550</span>
+                            <span class="price-old">₹700</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Phone Hangings -->
+            <div class="category-header animate-on-scroll" id="phone-hangings-section">
+                <h2 class="category-title"><i class="fas fa-mobile-alt"></i> Phone Hangings</h2>
+                <p>Decorative handmade charms & hangings for your phone</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card animate-on-scroll" data-category="phone-hangings" data-price="199">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/floral-silk-phone-charm.jpg" alt="Floral Silk Phone Charm" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Floral Silk Phone Charm</h4>
+                        <p class="product-desc">Elegant silk floral charm with tassel for your phone</p>
+                        <div class="product-price">
+                            <span class="price">₹199</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="phone-hangings" data-price="249">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/beaded-phone-hanging.jpg" alt="Beaded Phone Hanging" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Beaded Phone Hanging</h4>
+                        <p class="product-desc">Colorful beaded phone hanging with pearl accents</p>
+                        <div class="product-price">
+                            <span class="price">₹249</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="phone-hangings" data-price="179">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/tassel-phone-charm.jpg" alt="Tassel Phone Charm" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Tassel Phone Charm</h4>
+                        <p class="product-desc">Handmade tassel charm with silk thread and beads</p>
+                        <div class="product-price">
+                            <span class="price">₹179</span>
+                            <span class="price-old">₹250</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="phone-hangings" data-price="299">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/crystal-phone-hanging.jpg" alt="Crystal Phone Hanging" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Crystal Phone Hanging</h4>
+                        <p class="product-desc">Premium crystal and silk thread phone hanging</p>
+                        <div class="product-price">
+                            <span class="price">₹299</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Bracelets -->
+            <div class="category-header animate-on-scroll" id="bracelets-section">
+                <h2 class="category-title"><i class="fas fa-adjust"></i> Bracelets</h2>
+                <p>Stylish handcrafted bracelets for every occasion</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card animate-on-scroll" data-category="bracelets" data-price="250">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/gold-thread-bracelet.jpg" alt="Gold Thread Bracelet" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Gold Thread Bracelet</h4>
+                        <p class="product-desc">Elegant gold silk thread bracelet with charm</p>
+                        <div class="product-price">
+                            <span class="price">₹250</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="bracelets" data-price="320">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/red-charm-bracelet.jpg" alt="Red Charm Bracelet" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Red Charm Bracelet</h4>
+                        <p class="product-desc">Red silk thread bracelet with dangling charms</p>
+                        <div class="product-price">
+                            <span class="price">₹320</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="bracelets" data-price="280">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/mint-green-bracelet.jpg" alt="Mint Green Bracelet" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Mint Green Bracelet</h4>
+                        <p class="product-desc">Delicate mint green bracelet with pearl detailing</p>
+                        <div class="product-price">
+                            <span class="price">₹280</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="bracelets" data-price="375">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/lavender-silk-bracelet.jpg" alt="Lavender Silk Bracelet" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Lavender Silk Bracelet</h4>
+                        <p class="product-desc">Luxurious lavender bracelet with stone embellishments</p>
+                        <div class="product-price">
+                            <span class="price">₹375</span>
+                            <span class="price-old">₹450</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Kids Hair Bands -->
+            <div class="category-header animate-on-scroll" id="hair-bands-section">
+                <h2 class="category-title"><i class="fas fa-ribbon"></i> Kids Hair Bands</h2>
+                <p>Adorable hair bands designed just for little ones</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card animate-on-scroll" data-category="hair-bands" data-price="149">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/pink-bow-hair-band.jpg" alt="Pink Bow Hair Band" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge">Popular</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Pink Bow Hair Band</h4>
+                        <p class="product-desc">Cute pink bow hair band with silk thread wrapping</p>
+                        <div class="product-price">
+                            <span class="price">₹149</span>
+                            <span class="price-old">₹200</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="hair-bands" data-price="179">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/golden-flower-hair-band.jpg" alt="Golden Flower Hair Band" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Golden Flower Hair Band</h4>
+                        <p class="product-desc">Pretty golden flower hair band for little princesses</p>
+                        <div class="product-price">
+                            <span class="price">₹179</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="hair-bands" data-price="129">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/sky-blue-baby-hair-band.jpg" alt="Sky Blue Baby Hair Band" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Sky Blue Baby Hair Band</h4>
+                        <p class="product-desc">Soft sky blue hair band with tiny bead embellishments</p>
+                        <div class="product-price">
+                            <span class="price">₹129</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="hair-bands" data-price="199">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/lavender-pearl-hair-band.jpg" alt="Lavender Pearl Hair Band" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Lavender Pearl Hair Band</h4>
+                        <p class="product-desc">Beautiful lavender hair band with pearl clusters</p>
+                        <div class="product-price">
+                            <span class="price">₹199</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Kids Hair Clips -->
+            <div class="category-header animate-on-scroll" id="hair-clips-section">
+                <h2 class="category-title"><i class="fas fa-star"></i> Kids Hair Clips</h2>
+                <p>Fun & fabulous clips to style your little star</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card animate-on-scroll" data-category="hair-clips" data-price="99">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/rose-petal-clip-set.jpg" alt="Rose Petal Clip Set" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge">Bestseller</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Rose Petal Clip Set</h4>
+                        <p class="product-desc">Set of 4 adorable rose petal hair clips</p>
+                        <div class="product-price">
+                            <span class="price">₹99</span>
+                            <span class="price-old">₹150</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="hair-clips" data-price="120">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/golden-star-clips.jpg" alt="Golden Star Clips" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Golden Star Clips</h4>
+                        <p class="product-desc">Sparkling golden star-shaped clips - set of 3</p>
+                        <div class="product-price">
+                            <span class="price">₹120</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="hair-clips" data-price="140">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/butterfly-clip-set.jpg" alt="Butterfly Clip Set" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h4>Butterfly Clip Set</h4>
+                        <p class="product-desc">Set of 5 colorful butterfly clips for little girls</p>
+                        <div class="product-price">
+                            <span class="price">₹140</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="product-card animate-on-scroll" data-category="hair-clips" data-price="160">
+                    <div class="product-image">
+                        <img src="images/noolcitadel/crown-princess-clips.jpg" alt="Crown Princess Clips" class="product-placeholder">
+                        <div class="product-overlay">
+                            <button class="btn-icon wishlist-btn" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+                            <button class="btn-icon" title="Quick View"><i class="far fa-eye"></i></button>
+                        </div>
+                        <span class="product-badge new">New</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Crown Princess Clips</h4>
+                        <p class="product-desc">Royal crown-shaped clips with rhinestones - set of 3</p>
+                        <div class="product-price">
+                            <span class="price">₹160</span>
+                        </div>
+                        <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-logo">✦ Nool Citadel & Muhurtham Stories</h3>
+                    <p>Handcrafted accessories & premium rental jewellery for your most cherished moments.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="noolcitadel.html">Nool Citadel</a></li>
+                        <li><a href="muhurtham.html">Muhurtham Stories</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nool Citadel & Muhurtham Stories. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
