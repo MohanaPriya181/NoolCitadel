@@ -1,5 +1,5 @@
 /* ============================================
-   NOOL CITADEL & MUHURTHAM STORIES
+   MUHURTHAM STORIES
    Elegant Beige Floral Watercolor Theme
    ============================================ */
 
@@ -246,7 +246,7 @@ body::before {
 /* --- Hero Section --- */
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -484,7 +484,7 @@ body::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 75vh;
 }
 
 .hero-slide {
@@ -908,6 +908,14 @@ body::before {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+    }
+
+    .hero-carousel {
+        min-height: 60vh;
+    }
+
     .hero-title {
         font-size: clamp(2.1rem, 8vw, 3.2rem);
     }
@@ -953,7 +961,7 @@ body::before {
     .h-divider-line { width: 50px; }
     .h-divider-line-sm { width: 30px; }
 
-    .hero-indicators { bottom: 105px; }
+    .hero-indicators { bottom: 80px; }
 
     .hero-subtitle {
         font-size: 0.75rem;
@@ -961,58 +969,47 @@ body::before {
     }
 
     .showcase-grid {
-        grid-template-rows: 180px 1fr 180px;
-        gap: 14px;
+        gap: 16px;
         max-width: 100%;
         padding: 0 1rem;
     }
 
-    .showcase-r1-c1,
-    .showcase-r1-c2,
-    .showcase-r3-c1,
-    .showcase-r3-c2 {
-        height: auto;
+    .showcase-left,
+    .showcase-right {
+        height: 220px;
     }
 
-    .showcase-r2-c1,
-    .showcase-text {
-        min-height: auto;
-    }
-
-    .monika-card-img {
-        object-fit: contain;
+    .showcase-center {
+        height: 300px;
     }
 }
 
 @media (max-width: 600px) {
     .showcase-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
         gap: 16px;
     }
 
-    .showcase-r1-c1,
-    .showcase-r1-c2,
-    .showcase-r3-c1,
-    .showcase-r3-c2 {
-        height: 200px;
+    .showcase-left,
+    .showcase-right {
+        height: 240px;
+        align-self: auto;
     }
 
-    .showcase-r2-c1 {
-        height: 250px;
-    }
-
-    .showcase-text {
-        min-height: 350px;
-    }
-
-    .monika-card-img {
-        object-fit: contain;
-        max-height: 450px;
+    .showcase-center {
+        height: 320px;
     }
 }
 
 @media (max-width: 480px) {
+    .hero {
+        min-height: 50vh;
+    }
+
+    .hero-carousel {
+        min-height: 50vh;
+    }
+
     .hero-content {
         padding: 1.5rem 1.2rem;
     }
@@ -1043,9 +1040,9 @@ body::before {
         height: 65px;
     }
 
-    .hero-indicators { bottom: 95px; gap: 12px; }
+    .hero-indicators { bottom: 70px; gap: 12px; }
 
-    .hero-scroll-hint { bottom: 18px; }
+    .hero-scroll-hint { bottom: 14px; }
 
     .scroll-text {
         font-size: 0.6rem;
@@ -1054,12 +1051,8 @@ body::before {
 
     .hero-glow { display: none; }
 
-    .showcase-text {
-        min-height: 300px;
-    }
-
-    .monika-card-img {
-        max-height: 400px;
+    .showcase-center {
+        height: 280px;
     }
 }
 
@@ -1136,12 +1129,9 @@ body::before {
 }
 
 /* Staggered delays for grid items */
-.showcase-r1-c1 { transition-delay: 0.1s; }
-.showcase-r1-c2 { transition-delay: 0.2s; }
-.showcase-r2-c1 { transition-delay: 0.35s; }
-.showcase-text  { transition-delay: 0.5s; }
-.showcase-r3-c1 { transition-delay: 0.6s; }
-.showcase-r3-c2 { transition-delay: 0.7s; }
+.showcase-left  { transition-delay: 0.1s; }
+.showcase-center { transition-delay: 0.3s; }
+.showcase-right { transition-delay: 0.5s; }
 
 /* ============================================================
    BRAND INTRO / OUR STORY — Premium Enhanced
@@ -1281,11 +1271,26 @@ body::before {
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 220px 1fr 220px;
-    gap: 22px;
-    max-width: 900px;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 28px;
+    max-width: 950px;
     margin: 0 auto;
+    align-items: center;
+}
+
+.showcase-left {
+    align-self: end;
+    height: 280px;
+    transform: translateY(-30px);
+}
+
+.showcase-center {
+    height: 380px;
+}
+
+.showcase-right {
+    align-self: start;
+    height: 280px;
 }
 
 /* --- Showcase Photo Cards --- */
@@ -1364,18 +1369,6 @@ body::before {
     filter: brightness(1.06) contrast(1.04) saturate(1.1);
 }
 
-/* Default heights for photo cells */
-.showcase-r1-c1,
-.showcase-r1-c2,
-.showcase-r3-c1,
-.showcase-r3-c2 {
-    height: auto;
-}
-
-.showcase-r2-c1 {
-    height: auto;
-}
-
 .showcase-placeholder-tall {
     min-height: 100%;
 }
@@ -1450,12 +1443,9 @@ body::before {
 }
 
 /* Staggered delays for grid items */
-.showcase-r1-c1 { transition-delay: 0.1s; }
-.showcase-r1-c2 { transition-delay: 0.2s; }
-.showcase-r2-c1 { transition-delay: 0.35s; }
-.showcase-text  { transition-delay: 0.5s; }
-.showcase-r3-c1 { transition-delay: 0.6s; }
-.showcase-r3-c2 { transition-delay: 0.7s; }
+.showcase-left  { transition-delay: 0.1s; }
+.showcase-center { transition-delay: 0.3s; }
+.showcase-right { transition-delay: 0.5s; }
 
 /* ============================================================
    BRAND INTRO — Responsive
@@ -1483,35 +1473,18 @@ body::before {
     }
 
     .showcase-grid {
-        grid-template-rows: 180px 1fr 180px;
-        gap: 14px;
+        gap: 16px;
         max-width: 100%;
         padding: 0 1rem;
     }
 
-    .showcase-r1-c1,
-    .showcase-r1-c2,
-    .showcase-r3-c1,
-    .showcase-r3-c2 {
-        height: auto;
+    .showcase-left,
+    .showcase-right {
+        height: 220px;
     }
 
-    .showcase-r2-c1,
-    .showcase-text {
-        min-height: auto;
-    }
-
-    .showcase-text-inner {
-        padding: 2rem 1.5rem;
-    }
-
-    .showcase-product-name {
-        font-size: clamp(1.6rem, 5vw, 2.2rem);
-        letter-spacing: 2px;
-    }
-
-    .showcase-product-desc {
-        font-size: 0.82rem;
+    .showcase-center {
+        height: 300px;
     }
 
     .brand-corner-decor {
@@ -1540,28 +1513,17 @@ body::before {
 @media (max-width: 600px) {
     .showcase-grid {
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
         gap: 16px;
     }
 
-    .showcase-r1-c1,
-    .showcase-r1-c2,
-    .showcase-r3-c1,
-    .showcase-r3-c2 {
-        height: 200px;
+    .showcase-left,
+    .showcase-right {
+        height: 240px;
+        align-self: auto;
     }
 
-    .showcase-r2-c1 {
-        height: 250px;
-    }
-
-    .showcase-text {
-        min-height: 350px;
-    }
-
-    .monika-card-img {
-        object-fit: contain;
-        max-height: 450px;
+    .showcase-center {
+        height: 320px;
     }
 }
 
@@ -1570,11 +1532,9 @@ body::before {
         padding: 65px 0 75px;
     }
 
-    .showcase-r1-c1,
-    .showcase-r1-c2,
-    .showcase-r3-c1,
-    .showcase-r3-c2 {
-        height: 170px;
+    .showcase-left,
+    .showcase-right {
+        height: 200px;
     }
 
     .showcase-text-inner {
@@ -2077,18 +2037,11 @@ body::before {
     align-items: center;
 }
 
-.about-placeholder {
+.about-img {
     width: 100%;
-    height: 400px;
+    height: auto;
+    object-fit: contain;
     border-radius: var(--radius);
-    background: linear-gradient(135deg, var(--beige-light), var(--beige));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    font-size: 4rem;
-    color: var(--gold);
     box-shadow: var(--shadow);
 }
 
@@ -2542,6 +2495,11 @@ body::before {
         gap: 32px;
     }
 
+    .about-img {
+        max-height: 350px;
+        object-fit: contain;
+    }
+
     .testimonials-carousel {
         grid-template-columns: 1fr;
     }
@@ -2558,19 +2516,42 @@ body::before {
         font-size: 2rem;
     }
 
+    .section-reveal {
+        padding: 60px 0;
+    }
+
+    .about-section,
+    .occasions-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .page-hero {
+        padding: 120px 0 50px;
+    }
+
     .page-hero-title {
         font-size: 2.2rem;
+    }
+
+    .product-image,
+    .jewellery-card .product-image {
+        height: 200px;
     }
 }
 
 @media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
     .featured-grid,
     .products-grid {
         grid-template-columns: 1fr;
     }
 
     .occasions-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .footer-grid {
@@ -2582,12 +2563,65 @@ body::before {
         gap: 20px;
     }
 
+    .about-img {
+        max-height: 280px;
+    }
+
     .logo-text {
         font-size: 0.95rem;
     }
 
+    .section-title {
+        font-size: 1.7rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 32px;
+    }
+
+    .section-reveal {
+        padding: 48px 0;
+    }
+
+    .about-section,
+    .occasions-section,
+    .contact-section {
+        padding: 48px 0;
+    }
+
+    .testimonials-section {
+        padding: 48px 0;
+    }
+
+    .contact-form {
+        padding: 24px;
+    }
+
+    .footer {
+        padding: 40px 0 0;
+    }
+
+    .footer-grid {
+        gap: 28px;
+    }
+
+    .page-hero {
+        padding: 100px 0 40px;
+    }
+
     .page-hero-title {
         font-size: 1.8rem;
+    }
+
+    .btn-lg {
+        padding: 14px 28px;
+        font-size: 0.9rem;
+    }
+
+    .product-image,
+    .jewellery-card .product-image {
+        height: 180px;
     }
 }
 

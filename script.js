@@ -1,5 +1,5 @@
 /* ============================================
-   NOOL CITADEL & MUHURTHAM STORIES
+   MUHURTHAM STORIES
    JavaScript — Interactivity & Animations
    ============================================ */
 
